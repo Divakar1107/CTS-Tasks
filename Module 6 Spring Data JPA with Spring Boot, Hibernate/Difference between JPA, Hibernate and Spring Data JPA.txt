@@ -1,0 +1,34 @@
+JPA (Java Persistence API):
+JPA is a specification (set of rules), not a framework.
+It defines how Java objects should be mapped to database tables.
+It provides interfaces and annotations like @Entity, @Id, and @Table.
+JPA cannot work by itself; it requires an implementation.
+Examples of JPA implementations are Hibernate, EclipseLink, and OpenJPA.
+
+Hibernate:
+
+Hibernate is an ORM (Object Relational Mapping) framework.
+It is the most popular implementation of JPA.
+It converts Java objects into database tables automatically.
+It provides additional features such as:
+HQL (Hibernate Query Language)
+Caching
+Lazy Loading
+Automatic table creation
+It can work with or without JPA.
+
+Spring Data JPA:
+
+Spring Data JPA is a Spring Framework module built on top of JPA.
+It reduces boilerplate code by providing ready-made CRUD methods.
+It uses interfaces like JpaRepository and CrudRepository.
+No need to write SQL queries for basic database operations.
+It internally uses a JPA implementation (usually Hibernate).
+
+Key Differences:
+
+JPA is a specification.
+Hibernate is an implementation of JPA.
+Spring Data JPA is a Spring module that simplifies the use of JPA.
+JPA only defines standards, whereas Hibernate provides the actual implementation.
+Spring Data JPA further reduces coding effort by providing built-in repository methods like save(), findAll(), findById(), and delete().
